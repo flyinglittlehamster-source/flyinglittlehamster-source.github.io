@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MyGDSync — a personal, locally operated Mac and Google Drive synchronization utility.">
+  <title>MyGDSync · 个人 Google Drive 同步工具</title>
+  <style>
+    :root{color-scheme:light;--bg:#f7f9fc;--text:#1c2533;--muted:#5e6a7a;--line:#dce3eb;--primary:#155bb5;--surface:#fff}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    .wrap{max-width:810px;margin:auto;padding:0 24px}header{background:var(--surface);border-bottom:1px solid var(--line)}
+    nav{display:flex;justify-content:space-between;gap:20px;align-items:center;min-height:76px;flex-wrap:wrap;padding:12px 0}
+    a{color:var(--primary);text-decoration:none}a:hover{text-decoration:underline}.brand{font-weight:800;color:var(--text);font-size:1.12rem}
+    .links{display:flex;gap:22px;flex-wrap:wrap}main{padding:66px 0 80px}h1{font-size:clamp(2rem,5vw,3rem);line-height:1.22;letter-spacing:-.03em;margin:0 0 22px}
+    h2{font-size:1.25rem;margin:0 0 12px}.lead{font-size:1.12rem;color:var(--muted);max-width:680px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:25px;margin-top:22px}
+    ul{padding-left:24px;margin:8px 0}.small{color:var(--muted);font-size:.94rem}footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted)}
+  </style>
+</head>
+<body>
+<header><nav class="wrap"><a class="brand" href="/">MyGDSync</a><div class="links"><a href="/">首页 / Home</a><a href="/privacy.html">隐私政策 / Privacy</a><a href="https://github.com/flyinglittlehamster-source">联系 / Contact</a></div></nav></header>
+<main class="wrap">
+  <h1>MyGDSync</h1>
+  <p class="lead">一个在用户自己的 Mac 上运行、用于管理个人 Google Drive 文件同步及归档任务的工具。</p>
+  <p class="small">Personal Google Drive synchronization and archiving, run locally on the user's own Mac.</p>
+  <section class="card">
+    <h2>用途 / Purpose</h2>
+    <p>MyGDSync 用于在本人控制的 Mac 和 Google Drive 账户之间传输、检查、保存及整理文件，例如个人研究资料和视频归档。数据传输使用 Google Drive API；可通过 rclone 执行。它不是 Google 官方产品，也不提供公共云盘托管服务。</p>
+    <p class="small">MyGDSync helps the account owner transfer, verify, and organize personal files between a Mac and Google Drive. It uses the Google Drive API (including via rclone) and is not affiliated with Google.</p>
+  </section>
+  <section class="card">
+    <h2>Google 账户访问 / Google account access</h2>
+    <ul>
+      <li>由 Google OAuth 授权连接本人 Google Drive 账户。</li>
+      <li>为操作既有文件及归档目录，授权可能包含 Google Drive 文件的读取、创建、更新与删除权限；实际任务限制在用户配置的目录和操作范围内。</li>
+      <li>访问凭证由本地同步工具保存在用户控制的 Mac 上，不通过此网站收集。</li>
+      <li>可以随时在 Google 账户的第三方应用访问设置中撤销授权。</li>
+    </ul>
+    <p class="small">OAuth permissions may allow access to Google Drive files, including existing files. The local workflow operates within user-configured folders and tasks. This website does not request Google sign-in or collect OAuth credentials.</p>
+  </section>
+  <section class="card">
+    <h2>隐私与联系 / Privacy and contact</h2>
+    <p>本网站是公开的静态说明页，不提供 Google 登录、不接收文件上传，也不包含自建的行为分析脚本。有关授权数据的处理、保存和删除方式，请阅读 <a href="/privacy.html">完整隐私政策</a>。</p>
+    <p class="small">This public informational website is static: no account login, file upload, or custom analytics scripts. Read the <a href="/privacy.html">Privacy Policy</a> for details.</p>
+    <p>联系及项目所有者信息：<a href="https://github.com/flyinglittlehamster-source">GitHub 个人主页</a>。</p>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 MyGDSync · Personal utility · <a href="/privacy.html">Privacy Policy</a></div></footer>
+</body>
+</html>
